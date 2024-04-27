@@ -1,6 +1,6 @@
 #Set The ToDo List to The Originial File
 todo = []
-with open("py todo app\main\list.txt", "r") as rf:
+with open("list.txt", "r") as rf:
     for line in rf:
         todo.append(line)
 print(todo)
@@ -22,9 +22,9 @@ while True:
     print(todo)
 
     #Add The Chore to The File
-    with open("py todo app\main\list.txt", "w") as wf:
+    with open("list.txt", "w") as wf:
         wf.write("")
-    with open('py todo app\main\list.txt', "a") as af:
+    with open('list.txt', "a") as af:
         for item in todo:
             af.write(item + "\n")
 
