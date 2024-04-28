@@ -1,5 +1,5 @@
 # Py-ToDo APP
-A To-Do APP Made Using Python
+A ToDo APP Made Using Python
 
 Commands Available:
 List: Show The ToDo List
