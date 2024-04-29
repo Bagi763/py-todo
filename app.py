@@ -40,4 +40,4 @@ while True:
         break
     else:
         print("\nInvalid Command, Try Again")
-print("Bye!!")
+print("\n\nBye!!")
