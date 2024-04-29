@@ -8,9 +8,12 @@ def add(Task):
     print(f"\nThe Task '{Task}' was Added to The ToDo List!")
 
 def edit(Task, Edit):
-    todo.insert(todo.index(Task), Edit)
-    todo.remove(Task)
-    print(f"The Task: '{Task}' is Now '{Edit}'!!")
+    if Task in todo:
+        todo.insert(todo.index(Task), Edit)
+        todo.remove(Task)
+        print(f"The Task: '{Task}' is Now '{Edit}'!!")
+    else:
+        print(f"The Task: '{Task}' is not on The List")
 
 def delete(Task):
     todo.remove(Task)
