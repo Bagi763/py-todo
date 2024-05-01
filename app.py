@@ -1,6 +1,6 @@
 #Inicialize
 todo = []
-print("Welcome To Py-Todo APP!!\nMade by Bagi763")
+print("Welcome To Py-ToDo APP!!\nMade by Bagi763")
 
 #Define Functions
 def add(Task):
