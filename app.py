@@ -28,9 +28,13 @@ while True:
     print("Edit: Edit a Task on The ToDo List")
     print("Delete: Delete a Task on The ToDo List")
     print("Quit: Quit The APP")
+    print("More: More of Bagi763")
     command = input("Command: ")
     if command == "List" or command == "list":
-        print(f"\n{todo}")
+        if len(todo) != 0:
+            print(f"\n{todo}")
+        else:
+            print("\nList Is Empty")
     elif command == "Add" or command == "add":
         add(input("Task: "))
     elif command == "Edit" or command == "edit":
@@ -41,6 +45,10 @@ while True:
         delete(input("Task: "))
     elif command == "Quit" or command == "quit":
         break
+    elif command == "More" or command == 'more':
+        print("\n\n\n------------------------------------------")
+        print("Github Profile: https://github.com/Bagi763\nBe-Team: https://github.com/be-rep")
+        print("------------------------------------------\n\n\n")
     else:
-        print("\nInvalid Command, Try Again")
+        print("\nError: Invalid Command")
 print("\n\nBye!!")
